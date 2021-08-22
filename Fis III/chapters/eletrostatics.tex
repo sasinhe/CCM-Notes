@@ -1,0 +1,54 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Electrostatics}
+\labch{intro}
+
+\section{Electric Charge}
+
+\section{Coulombs Law}
+
+\section{The Electric Field}
+	%TODO: Overview of the structure and components of the Nucleus.
+	\subsection{Introduction}
+		Electrodynamics main concern, as the name says, is the problem of given a known distribution of charge ${q_i}$ and a test charge $Q$. discover the value of the force exerted on the test charge.
+
+
+	
+	\subsection{Superposition Principle}
+		In this section, we'll introduce one of Electromagnetism's main troubleshooter. \textit{The Superposition Principle}.\\
+		First, one thing that needs to be clear is that this is a principle. It can be proven by the Maxwell's Equations (simply because they are linear). But history show that what happend was the other way around.\\%TODO: FIND REFERENCE FOR THIS.
+		In physics, normally experimental facts motivates models (which then are tested experimentally for their predictions). In this case, Maxwell KNEW that his equations needed to be linear, in order for the superposition principle to work.\\
+		The superposition principle states as follows:
+
+	\subsection{Gauss Law}
+		Lets think on a simple example. Suppose you have a pool covered with water where you can't see any sink or source, only the flow of water (don't ask me why). How can I know where are any of this two things located on the pool?\\
+		Well, lets visually surround a given part of the pool (not disturbing the system) and then we'll watch for two things:\\
+		\begin{itemize}
+			\item If there is more water coming out of it than it's coming in, the water flux is clearly positive and then we have a source inside.
+			\item Analogously, if there is more water coming in than coming out, the flux is negative and we have a sink.
+		\end{itemize}
+		But how do we quantify this idea? We know that it's proportional to something about the fluid (in this case, water) and something about the capacity of the source/sink. Lets return to the electrostatics example.
+		We'll first define a concept called the electric flux as follows, Given a closed surface, we may define a normal vector to a element of area of this surface as $\text{d}\vec{S}$. Where is direction is perpendicular to the surface element (and with consensual direction pointing outwards) and with magnitude equal to the elements area. The flux is then given by:
+		\begin{equation}
+			\Phi(\vec{E}) = \oiint_S \vec{E} \cdot \text{d}\vec{S}
+		\end{equation}
+		At first, it seems like a rather abstract equation. Lets analyse it.\\
+		First, lets see what the integrand has to tell us. It's composed of a scalar product between the electric field and a differential vector called $\text{d}\vec{S}$. So basically we're calculating what is the component of the electric field with respect to the normal vector of a element of area and summing up through the whole surface. So, what is the result of this calculation?\\
+		Well, as we saw before, it must be directly proportional to the capacity of the charge inside (in this case, $q$) and something about the environments were studying. So, what can it be?\\
+		Lets make for a simple charge located at the origin with a spherical surface.
+		\begin{equation}
+			\oint_S \vec{E} \cdot d\vec{A} = \int_S \frac{1}{4\pi\epsilon_0} \left(\frac{q}{r^2}\hat{r}\right)\cdot(r^2\sin\theta d\theta d\phi \hat{r}) = \frac{q}{\epsilon_0}
+		\end{equation}
+		Notice that the radius of the sphere vanishes, for while the surface area goes proportional to $r^2$, the field goes down with $1/r^2$.\\
+		You may ask now. \textit{"How about other surfaces and other charge distributions?} Well, about the surfaces we can say that its flux is equal to the sphere and by the superposition principle we can extrapolate for any charge distribution. %TODO: prove this statement.
+
+
+\section{Charge distribution}
+	Charge distribution is an important concept on the theory of Electrostatics. It's normally expressed in three different ways:
+	\begin{itemize}
+		\item $1D \longrightarrow [\lambda] = C/m$
+		\item $2D \longrightarrow [\sigma] = C/m^2$
+		\item $3D \longrightarrow [\rho] = C/m^3$
+	\end{itemize}
+	The first two expressions are an approximation of the third one. (almost) every day-to-day object is three dimensional, however, if some dimensions are much larger than the remaining, we can approximate the object as some ($d<3$) d-dimensional object. Which is much easier to deal with.
+
+	
